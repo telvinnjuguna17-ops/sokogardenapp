@@ -5,6 +5,7 @@ import Addproducts from './components/Addproducts';
 import Signin from './components/Signin';
 import Signup from './components/Signup';
 import Notfound from './components/Notfound';
+import "bootstrap/dist/css/bootstrap.min.css"
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         </header>
         {/* Below are our different routes and their rendered components */}
         <Routes>
-          <Route path="/getproducts" element={<Getproducts />} />
+          <Route path="/" element={<Getproducts />} />
           <Route path="/addproducts" element={<Addproducts />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
