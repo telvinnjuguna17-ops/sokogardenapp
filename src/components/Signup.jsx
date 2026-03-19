@@ -53,6 +53,9 @@ const Signup = () => {
       // update the error hook with the message given back from the response
       setError(error.message)
     } 
+    setTimeout(() =>{
+      setSuccess("");
+    },5000);
     
   }
 
